@@ -2,7 +2,7 @@ class TodosController < ApplicationController
   def index
     todos = Todo.all
 
-    render locals: { todos: todos }
+    render locals: { todos: todos}
   end
 
   def new
@@ -18,7 +18,7 @@ class TodosController < ApplicationController
 
   private
 
-      def todo_params
-        params.require(:todo).permit(:title)
-      end
+    def todo_params
+      params.require(:todo).permit(:title)
+    end
 end
