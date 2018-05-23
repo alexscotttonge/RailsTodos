@@ -1,4 +1,4 @@
-require_relative "support/features/sign_in.rb"
+require_relative "support/features/sign_in"
 
 RSpec.configure do |config|
 
