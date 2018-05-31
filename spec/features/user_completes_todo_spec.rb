@@ -4,9 +4,7 @@ RSpec.feature "User completes todo" do
   scenario "successfully" do
     sign_in
 
-    click_on "Add a new item"
-    fill_in "Title", with: "Buy booze"
-    click_on "Save"
+    create_todo "Buy booze"
 
     click_on "Mark complete"
 

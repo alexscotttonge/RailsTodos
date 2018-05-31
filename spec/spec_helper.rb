@@ -1,4 +1,5 @@
 require_relative "support/features/sign_in"
+require_relative "support/features/todo_helper"
 
 RSpec.configure do |config|
 
