@@ -10,6 +10,6 @@ RSpec.feature "User completes todo" do
 
     click_on "Mark complete"
 
-    expect(page).to have_css ".todos li.completed", text: "Buy milk"
+    expect(page).to have_css ".todos li.completed", text: "Buy booze"
   end
 end

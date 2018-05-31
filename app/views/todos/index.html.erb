@@ -1,7 +1,7 @@
 <%= link_to "Add a new item", new_todo_path %>
 
 <ul class="todos">
-  <%= todos.each do |todo| %>
+  <% todos.each do |todo| %>
   <li class="<%= "completed" if todo.completed? %>">
     <%= todo.title %>
     <%= button_to "Mark complete", todo_completion_path(todo) %>
