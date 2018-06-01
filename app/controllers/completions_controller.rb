@@ -7,7 +7,7 @@ class CompletionsController < ApplicationController
   end
 
   def destroy
-    todo.incomplete
+    todo.incomplete!
 
     redirect_to todos_path
   end

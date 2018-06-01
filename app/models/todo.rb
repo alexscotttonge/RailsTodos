@@ -8,7 +8,7 @@ class Todo < ApplicationRecord
     touch :completed_at
   end
 
-  def incomplete
+  def incomplete!
     update completed_at: nil
   end
 end
