@@ -6,6 +6,12 @@ class CompletionsController < ApplicationController
     redirect_to todos_path
   end
 
+  def destroy
+    todo.incomplete
+
+    redirect_to todos_path
+  end
+
   private
 
     def todo
